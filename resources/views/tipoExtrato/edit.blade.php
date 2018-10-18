@@ -44,7 +44,7 @@
 <div class="box box-primary">
     <div class="row">
         <div class="box-body">
-            <div class="col-xs-8 col-sm-8 col-md-8">
+            <div class="col-sm-12 col-md-4">
                 <div class="form-group">
                     <strong>Nome da Especie:</strong>
                     {!! Form::text('nome_extrato', null, array('placeholder' => 'Digite o nome do tipo de extrato da planta','class' => 'form-control','style'=>'height:30px')) !!}

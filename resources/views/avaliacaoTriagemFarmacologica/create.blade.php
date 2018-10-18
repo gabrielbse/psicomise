@@ -65,7 +65,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
 
-                    <div class="col-xs-4 col-sm-4 col-md-4">
+                    <div class="col-sm-12 col-md-4">
                         <div class="form-group">
                             <strong>Peso do Animal Hoje:</strong>
                             {!! Form::number('peso_animal_dia', null, null, array('class' => 'form-control')) !!}

@@ -44,26 +44,26 @@
 <div class="box box-primary">
     <div class="box-body">
         <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4">
+            <div class="col-sm-12 col-md-2">
                 <div class="form-group">
                     <strong>ID de registro:</strong>
                     {!! Form::text('identificacao_do_animal', null, array('placeholder' => 'Digite o ID do animal','class' => 'form-control')) !!}
                 </div>
             </div>
-             <div class="col-xs-4 col-sm-4 col-md-4">
+             <div class="col-sm-12 col-md-3">
                <div class="form-group">
                  <strong>Grupo Experimento</strong>
                  {!! Form::select('fk_grupo_experimento', $grupo_experimentos, null, array('class' => 'form-control')) !!}
 
               </div>
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-4">
+            <div class="col-sm-12 col-md-1"">
                 <div class="form-group">
                     <strong>Idade (dias):</strong>
                     {!! Form::number('idade_animal', null, array('placeholder' => 'Digite a idade do animal','class' => 'form-control')) !!}
                 </div>
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-4">
+            <div class="col-sm-12 col-md-2">
                 <div class="form-group">
                     <strong>Sexo:</strong>
                     {!! Form::select('sexo_animal',array('M' => 'Macho', 'F' => 'Fêmea'), null, array('placeholder' => 'Selecione o sexo','class' => 'form-control')) !!}

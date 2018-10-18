@@ -44,37 +44,37 @@
 <div class="box box-primary">
     <div class="row">
         <div class="box-body">
-            <div class="col-xs-8 col-sm-8 col-md-8">
+            <div class="col-sm-12 col-md-4">
                 <div class="form-group">
                     <strong>Nome da Familia:</strong>
                     {!! Form::text('nome_planta', null, array('placeholder' => 'Digite o nome da planta','class' => 'form-control','style'=>'height:30px')) !!}
                 </div>
             </div>
-              <div class="col-xs-8 col-sm-8 col-md-8">
+              <div class="col-sm-12 col-md-4">
                 <div class="form-group">
                     <strong>Local da retirada:</strong>
                     {!! Form::text('local_retirada', null, array('placeholder' => 'Digite o nome do local onde a planta foi retirada','class' => 'form-control')) !!}
                 </div>
             </div>
-               <div class="col-xs-8 col-sm-8 col-md-8">
+               <div class="col-sm-12 col-md-4">
                 <div class="form-group">
                     <strong>Link com Site:</strong>
                     {!! Form::text('link_com_site', null, array('placeholder' => 'Digite o link do site refente a planta','class' => 'form-control')) !!}
                 </div>
             </div>
-             <div class="col-xs-4 col-sm-4 col-md-4">
+             <div class="col-sm-12 col-md-4">
                <div class="form-group">
                  <strong>Especie</strong>
                  {!! Form::select('fk_especie_planta', $especie_planta, null, array('class' => 'form-control')) !!}
               </div>
             </div>
-             <div class="col-xs-4 col-sm-4 col-md-4">
+             <div class="col-sm-12 col-md-4">
                <div class="form-group">
                  <strong>Gênero</strong>
                  {!! Form::select('fk_genero_planta', $genero_planta, null, array('class' => 'form-control')) !!}
               </div>
             </div>
-               <div class="col-xs-4 col-sm-4 col-md-4">
+               <div class="col-sm-12 col-md-4">
                  <div class="form-group">
                  <strong>Familia</strong>
                  {!! Form::select('fk_familia_planta', $familia_planta, null, array('class' => 'form-control')) !!}
