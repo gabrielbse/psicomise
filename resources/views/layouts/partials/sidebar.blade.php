@@ -29,8 +29,8 @@
                     </li>
                     <li class="treeview"><a href="#"><i class="fa fa-users"></i>Animais<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
                         <ul class="treeview-menu">
-                            <li><a href="{{ route('animal.index') }}"><i class="fa fa-bug"></i><span>Animal</span></a></li>
                             <li><a href="{{ route('grupoExperimento.index') }}"><i class="fa fa-university"></i><span>Grupo Experimento</span></a></li>
+                            <li><a href="{{ route('animal.index') }}"><i class="fa fa-bug"></i><span>Animal</span></a></li>
                         </ul>
                     </li>                   
                     <li class="treeview"><a href="#"><i class="fa fa-users"></i>Extratos<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>

@@ -16,7 +16,7 @@
         </div>
         @endsection     
         <div class="pull-right" style="margin-right: 3%">
-            <a class="btn btn-primary" href="{{ route('triagemFarmacologicaComportamental.index') }}"> Voltar</a>
+            <a class="btn btn-primary" href="{{ route('avaliacaoTriagemFarmacologica.index') }}"> Voltar</a>
         </div>
     </div>
 </div>
@@ -37,25 +37,25 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <fieldset>
                     <legend>Cabeçalho da Avaliacao </legend>
-                    <div class="col-xs-4 col-sm-4 col-md-4">
+                    <div class="col-sm-12 col-md-4">
                         <div class="form-group">
                             <strong>Animal:</strong>
                             {!! Form::select('fk_animal', $animals, null, array('class' => 'form-control')) !!}
                         </div>                
                     </div>
-                    <div class="col-xs-2 col-sm-2 col-md-2">
+                    <div class="col-sm-12 col-md-2">
                         <div class="form-group">
                             <strong>Minuto da avaliação:</strong><br>
                             {!! Form::select('tempo_minuto_avaliacao', array('30', '60','120', '180', '240'), array('class' => 'form-control')) !!}
                         </div>
                     </div>
-                    <div class="col-xs-2 col-sm-2 col-md-2">
+                    <div class="col-sm-12 col-md-2">
                         <div class="form-group">
                             <strong>Data da avaliação:</strong>
                             {!! Form::date('data_avaliacao', null, array('class' => 'form-control')) !!}
                         </div>
                     </div>
-                    <div class="col-xs-4 col-sm-4 col-md-4">
+                    <div class="col-sm-12 col-md-4">
                         <div class="form-group">
                             <strong>Experimento:</strong>
                             {!! Form::select('fk_experimento', $experimentos, null, array('class' => 'form-control')) !!}
@@ -74,7 +74,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Agressividade: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -93,7 +93,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Ambulação aumentada: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -112,7 +112,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Andar em circulo: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -131,7 +131,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Auto limpeza: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -150,7 +150,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Bocejo: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -169,7 +169,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Contorcoes abdominais: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -188,7 +188,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Convulsoes: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -207,7 +207,7 @@
                 </div>        
                 <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Escalar: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -226,7 +226,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Estereotipia: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -245,7 +245,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">        
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Irritabilidade: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -264,7 +264,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">    
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Levantar: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -283,7 +283,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                          <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Movimentação Intensa das Vibrissas: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -302,7 +302,7 @@
                 </div>    
                 <div class="col-xs-12 col-sm-12 col-md-12">     
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Pedalar: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -321,7 +321,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Sacudir a cabeça: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -340,7 +340,7 @@
                 </div>
                  <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                             <strong>Saltos: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -359,7 +359,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Tremores: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -378,7 +378,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Vocalização: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -397,7 +397,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Abdução das patas do trem posterior: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -416,7 +416,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Ambulação diminuida: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -435,7 +435,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Analgesia: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -454,7 +454,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Anestesia: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -473,7 +473,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Ataxia: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -492,7 +492,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Catatonia: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -511,7 +511,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Cauda de Straub: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -530,7 +530,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Hipnose: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -549,7 +549,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Perda do reflexo auricular: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -568,7 +568,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Perda do reflexo corneal: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -587,7 +587,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Ptose palpebral: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -606,7 +606,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Reflexo de endireitamento: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -625,7 +625,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Resposta ao toque diminuida: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -644,7 +644,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Sedação: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -663,7 +663,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Cianose: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -682,7 +682,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Constipação: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -701,7 +701,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Defecação: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -720,7 +720,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                          <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Diarréia: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -739,7 +739,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Força para agarrar: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -758,7 +758,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Lacrimejamento: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -777,7 +777,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Micção: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -796,7 +796,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Piloereção: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -815,7 +815,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Respiracao: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -834,7 +834,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Salivação: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -853,7 +853,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Tônus muscular: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">
@@ -872,7 +872,7 @@
                 </div>
                  <div class="col-xs-12 col-sm-12 col-md-12"> 
                         <div class="form-group">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
+                            <div class="col-sm-12 col-md-2">
                                 <strong>Mortes: </strong>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1">

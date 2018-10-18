@@ -34,55 +34,55 @@
 <div class="box box-primary">
     <div class="box-body">
         <div class="row">
-            <div class="col-xs-8 col-sm-8 col-md-8">
+            <div class="col-sm-12 col-md-8">
                 <div class="form-group">
                     <strong>Nome do Experimento:</strong>
                     {!! Form::text('nome_experimento', null, array('placeholder' => 'Digite o nome do experimento','class' => 'form-control')) !!}
                 </div>
             </div>
-              <div class="col-xs-4 col-sm-4 col-md-4">
+              <div class="col-sm-12 col-md-4">
                 <div class="form-group">
                     <strong>Dose do extrato da planta:</strong>
                     {!! Form::number('dose', null, array('placeholder' => 'Digite a dose do extrato da planta aplicada ao animal','class' => 'form-control')) !!}
                 </div>
             </div>
-               <div class="col-xs-8 col-sm-8 col-md-8">
+               <div class="col-sm-12 col-md-8">
                 <div class="form-group">
                     <strong>Nome do Farmaco (*Se utiliar farmaco):</strong>
                     {!! Form::text('nome_farmaco', null, array('placeholder' => 'Digite o nome do farmaco','class' => 'form-control')) !!}
                 </div>
             </div>
-              <div class="col-xs-4 col-sm-4 col-md-4">
+              <div class="col-sm-12 col-md-4">
                 <div class="form-group">
                     <strong>Dose do Farmaco(*Se utiliar farmaco):</strong>
                     {!! Form::number('dose_farmaco', null, array('placeholder' => 'Digite a dose do farmaco','class' => 'form-control')) !!}
                 </div>
             </div>
-              <div class="col-xs-4 col-sm-4 col-md-4">
+              <div class="col-sm-12 col-md-4">
                 <div class="form-group">
                     <strong>Peso referência:</strong>
                     {!! Form::number('peso_referencia', null, array('placeholder' => 'Digite o peso referência do animal','class' => 'form-control')) !!}
                 </div>
             </div>
-             <div class="col-xs-4 col-sm-4 col-md-4">
+             <div class="col-sm-12 col-md-4">
                    <div class="form-group">
                      <strong>Planta</strong>
                      {!! Form::select('fk_planta', $planta, null, array('class' => 'form-control')) !!}
                   </div>
                 </div>
-                <div class="col-xs-4 col-sm-4 col-md-4">
+                <div class="col-sm-12 col-md-4">
                    <div class="form-group">
                      <strong>Parte da Planta</strong>
                      {!! Form::select('fk_parte_da_planta', $parte_da_planta, null, array('class' => 'form-control')) !!}
                   </div>
                 </div>
-                 <div class="col-xs-4 col-sm-4 col-md-4">
+                 <div class="col-sm-12 col-md-4">
                    <div class="form-group">
                      <strong>Via de Administracao</strong>
                      {!! Form::select('fk_via_de_administracao', $via_de_administracao, null, array('class' => 'form-control')) !!}
                   </div>
                 </div>
-                   <div class="col-xs-4 col-sm-4 col-md-4">
+                   <div class="col-sm-12 col-md-4">
                      <div class="form-group">
                      <strong>Tipo de Extrato</strong>
                      {!! Form::select('fk_tipo_extrato', $tipo_extrato, null, array('class' => 'form-control')) !!}
